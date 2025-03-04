@@ -1,6 +1,6 @@
 # 🌐 Home Assistant Add-on: Homepage Server 🚀
 
-Welcome to the **Homepage Server for Home Assistant** repository! This add-on is designed to host the Homarr dashboard independently within your Home Assistant environment, providing easy and direct access to your self-hosted dashboard.
+Welcome to the **Homepage Server for Home Assistant** repository! This add-on is designed to host the Homepage dashboard independently within your Home Assistant environment, providing easy and direct access to your self-hosted dashboard.
 
 ## 🎉 Features
 
@@ -11,7 +11,7 @@ Welcome to the **Homepage Server for Home Assistant** repository! This add-on is
 
 ## 💡 About Homepage
 g
-Homepage is a versatile, self-hosted dashboard that allows you to centralize and manage access to your web services and frequently visited websites. Customize it to create a personal or home hub for easy access to all your essential online resources. Read more about Homarr [here](https://gethomepage.dev/).
+Homepage is a versatile, self-hosted dashboard that allows you to centralize and manage access to your web services and frequently visited websites. Customize it to create a personal or home hub for easy access to all your essential online resources. Read more about Homepage [here](https://gethomepage.dev/).
 
 ## 🚀 Quick Start
 
