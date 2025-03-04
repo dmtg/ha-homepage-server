@@ -13,5 +13,3 @@ ports:
   3000/tcp: 3000
 map:
   - share:rw
-volumes:
-      - /config/addons_config/homepage:/app/config # Make sure your local config directory exists
