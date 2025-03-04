@@ -23,5 +23,23 @@ cp -R $PERSISTENT_CONFIG_PATH/* $HOMEPAGE_CONFIG_PATH/ 2>/dev/null
 # Start continuous sync in the background
 sync_to_persistent &
 
-#Start Server
+# Exporting hostname
+echo "Exporting hostname..."
+export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-7575}"
+
+# Migrating database
+echo "Migrating database..."
+cd ./migrate; yarn db:migrate & PID=$!
+
+# Wait for migration to finish
+wait $PID
+
+# Check and copy default.json if necessary
+cp -n /app/config/default.json /app/data/config/default.json
+
+# Starting Homarr
+echo "Starting production server..."
 node /app/server.js & PID=$!
+
+# Wait for Homarr server process to end
+wait $PID
