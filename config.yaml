@@ -1,6 +1,6 @@
 name: "Homepage"
 description: "Homepage integration for Home Assistant"
-version: "0.02"
+version: "0.03"
 slug: "homepage_addon"
 init: false
 arch:
