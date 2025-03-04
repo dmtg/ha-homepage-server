@@ -29,11 +29,6 @@ sync_to_persistent &
 echo "Exporting hostname..."
 export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-3000}"
 
-
-
-# Check and copy default.json if necessary
-cp -n /app/config/default.json /config/addons_config/homepage/default.json
-
 # Starting Homepage
 echo "Starting production server..."
 
