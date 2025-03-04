@@ -1,6 +1,6 @@
 name: "Homepage"
 description: "Homepage integration for Home Assistant"
-version: "0.03"
+version: "0.04"
 slug: "homepage_addon"
 init: false
 arch:
@@ -13,3 +13,5 @@ ports:
   3000/tcp: 3000
 map:
   - share:rw
+volumes:
+      - /config/addons_config/homepage:/app/config # Make sure your local config directory exists
