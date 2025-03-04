@@ -3,7 +3,6 @@
 # Define paths for Homepage's data
 HOMEPAGE_CONFIG_PATH="/app/config"
 
-
 # Mapped directories from the host
 PERSISTENT_CONFIG_PATH="/share/homepage/configs"
 
@@ -24,9 +23,5 @@ cp -R $PERSISTENT_CONFIG_PATH/* $HOMEPAGE_CONFIG_PATH/ 2>/dev/null
 # Start continuous sync in the background
 sync_to_persistent &
 
-# Exporting hostname
-echo "Exporting hostname..."
-export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-3000}"
-
-# Starting Homepage
-echo "Starting production server..."
+#Start Server
+node /app/server.js & PID=$!
