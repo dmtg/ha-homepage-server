@@ -28,16 +28,16 @@ echo "Exporting hostname..."
 export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-7575}"
 
 # Migrating database
-echo "Migrating database..."
-cd ./migrate; yarn db:migrate & PID=$!
+#echo "Migrating database..."
+#cd ./migrate; yarn db:migrate & PID=$!
 
 # Wait for migration to finish
-wait $PID
+#wait $PID
 
 # Check and copy default.json if necessary
-cp -n /app/config/default.json /app/data/config/default.json
+#cp -n /app/config/default.json /app/data/config/default.json
 
-# Starting Homarr
+# Starting Homepage
 echo "Starting production server..."
 node /app/server.js & PID=$!
 
