@@ -5,11 +5,10 @@ HOMEPAGE_CONFIG_PATH="/app/config"
 
 
 # Mapped directories from the host
-PERSISTENT_CONFIG_PATH="/config/addons_config/homepage"
+PERSISTENT_CONFIG_PATH="/share/homepage/configs"
 
 # Ensure the persistent directories exist
 mkdir -p $PERSISTENT_CONFIG_PATH
-
 
 # Function to sync data from Homepage's directories to persistent storage
 sync_to_persistent() {
@@ -31,7 +30,6 @@ export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-3000}"
 
 # Starting Homepage
 echo "Starting production server..."
-
 
 # Wait for Homepage server process to end
 wait $PID
