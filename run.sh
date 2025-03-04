@@ -30,6 +30,3 @@ export NEXTAUTH_URL_INTERNAL="http://$HOSTNAME:${PORT:-3000}"
 
 # Starting Homepage
 echo "Starting production server..."
-
-# Wait for Homepage server process to end
-wait $PID
