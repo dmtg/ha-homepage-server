@@ -19,7 +19,7 @@ Homepage is a versatile, self-hosted dashboard that allows you to centralize and
 2. **Run**: Start the add-on to get Homepage up and running on port 3000.
 3. **Access**: Open your browser and navigate to `http://<your-home-assistant-ip>:3000` to access your Homepage dashboard.
 
-Your files are safely backed up to `/config/addons_config/homepage` in your Home Assistant installation. 
+Your files are safely backed up to `/share/homepage/configs` in your Home Assistant installation. 
 
 ## 🛠 Installation
 
